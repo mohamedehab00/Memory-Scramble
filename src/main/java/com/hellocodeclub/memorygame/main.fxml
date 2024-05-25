@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hellocodeclub.memorygame.AppController">
+    <children>
+        <AnchorPane fx:id="root" minHeight="373.0" minWidth="439.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <children>
+                <BorderPane fx:id="body" styleClass="body" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                    <center>
+                        <HBox>
+                            <GridPane fx:id="gameMatrix" alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml">
+                                <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+
+                            </GridPane>
+                         <Pane fx:id="handPaneMac" prefHeight="14.0" />
+                            <Label fx:id="countdownLabel" layoutX="170.0" layoutY="92.0" text="Countdown" />
+                        </HBox>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" />
+    </effect>
+</AnchorPane>
